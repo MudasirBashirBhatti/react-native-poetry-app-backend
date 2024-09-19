@@ -2,6 +2,7 @@ import express from 'express'
 import dotenv from 'dotenv'
 import { mongoDb } from './utils/mongoDb.js';
 import { poetryRoute } from './routes/poetry.route.js';
+import cors from 'cors'
 
 const app = express();
 dotenv.config();
