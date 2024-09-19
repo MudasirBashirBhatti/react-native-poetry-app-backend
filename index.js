@@ -7,6 +7,11 @@ const app = express();
 dotenv.config();
 app.use(express.json())
 
+app.use(cors({
+    origin: process.env.CLIENT_URL,
+    methods: ['PUT', 'POST', 'DELETE', 'GET']
+}))
+
 const PORT = process.env.PORT
 
 mongoDb()
