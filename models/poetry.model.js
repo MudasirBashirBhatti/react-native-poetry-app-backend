@@ -13,6 +13,6 @@ const poetryScehma = new Schema({
         type: String,
         required: true
     }
-})
+}, { timestamps: true })
 
 export const Poetry = mongoose.model('Poetry', poetryScehma)
